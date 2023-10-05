@@ -22,12 +22,12 @@ You can add a subfolder in the /src/assets/ folder with the name of your song, t
 After adding the folder you will need to manually create the 3 config files in the /src/projects folder
 These are filename.json, filename_names.json and filename_info.json
 
-# filename_info.json
+## filename_info.json
 
 This is where the name and bpm of your track goes, use the following syntax:
 { "title": "Track Title Goes Here", "bpm": "136" }
 
-# filename_names.json
+## filename_names.json
 
 This is where the names of your channels need to go, you can just use empty double speachmarks for any unused channels
 i.e: ""
@@ -35,7 +35,7 @@ i.e: ""
 Use the following syntax:
 ["Kick", "Snare", "Perc", "Hats", "Keys", "Bubble", "Organ", "Horns", "Guitar", "Bass"]
 
-# filename.json
+## filename.json
 
 This is where you specify each of the individual stem locations and the name (which will be the same as the filename_names.json entry at the matching position)
 
