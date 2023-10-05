@@ -1,0 +1,23 @@
+main{
+  margin-top:5rem;
+}
+.col{
+  padding:0px;
+}
+div.controls:hover {
+  color:blue;
+  font-weight:bold;
+}
+div.controls label {
+  display: inline-block;
+  text-align: center;
+  width: 50px;
+}
+
+div.controls label, div.controls input, output {
+    vertical-align: middle;
+    padding: 0;
+    margin: 0;
+   font-family: "Open Sans",Verdana,Geneva,sans-serif,sans-serif;
+  font-size: 12px;
+}

@@ -1,0 +1,16 @@
+[
+  { "url": "http://localhost/assets/healing/kick.mp3", "name": "Kick", "indexval": "0" },
+  { "url": "http://localhost/assets/healing/snare.mp3", "name": "Snare", "indexval": "1" },
+  { "url": "http://localhost/assets/healing/perc.mp3", "name": "Perc", "indexval": "2" },
+  { "url": "http://localhost/assets/healing/hats.mp3", "name": "Hats", "indexval": "3" },
+  { "url": "http://localhost/assets/healing/chops.mp3", "name": "Keys", "indexval": "4" },
+  { "url": "http://localhost/assets/healing/bubble.mp3", "name": "Bubble", "indexval": "5" },
+  {
+    "url": "http://localhost/assets/healing/organ.mp3",
+    "name": "Organ",
+    "indexval": "6"
+  },
+  { "url": "http://localhost/assets/healing/horns.mp3", "name": "Horns", "indexval": "7" },
+  { "url": "http://localhost/assets/healing/guitar.mp3", "name": "Guitar", "indexval": "8" },
+  { "url": "http://localhost/assets/healing/bass.mp3", "name": "Bass", "indexval": "9" }
+]

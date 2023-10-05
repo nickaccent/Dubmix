@@ -1,0 +1,461 @@
+.project{
+	width:100%;
+}
+.channel{
+	border:1px solid #fff;
+	border-radius:4px;
+	background:#efefef;
+}
+.col{
+	padding:0px;
+}
+.sample{
+	padding:10px;
+	width:100%;
+	height:40px;
+	border-bottom: 1px solid #fff;
+}
+.stop_sample{
+	display:none;
+}
+
+.mainrow{
+	position: relative;
+}
+.play_all{
+	position:absolute;
+	top:16px;
+	left:-20px;
+}
+.record{
+    position:absolute;
+    top:16px;
+    left:-40px;
+    color:#222;
+}
+.record.dark_mode{
+    color:#fff;
+}
+.record.active{
+    color:red;
+}
+.stop_all_samples{
+	display: none;
+}
+#recordingslist{
+    list-style:none;
+}
+.mute_button{
+	cursor:pointer;
+	width: 30px;
+    height: 30px;
+    border: 2px solid orange;
+    margin: 20% auto;
+    text-align: center;
+    color:#969590;
+}
+.mute_button.active{
+	border: 2px solid #fff;
+	background:orange;
+	color:#fff;
+}
+.mute_holder{
+	width: 100%;
+    height: 60px;
+    display: table;
+    vertical-align: middle;
+    border-bottom: 1px solid #fff;
+    position: relative;
+}
+.fa{ cursor: pointer; }
+.delay_holder{
+	width: 100%;
+    height: 60px;
+    display: table;
+    vertical-align: middle;
+    border-bottom: 1px solid #fff;
+    text-align:center;
+    padding-top: 10px;
+    position: relative;
+}
+.delay_holder p{
+    margin-bottom:0px;
+    color: #969590;
+}
+.delay2_holder{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    display: table;
+    vertical-align: middle;
+    border-bottom: 1px solid #fff;
+    text-align:center;
+    padding-top: 10px;
+}
+.delay2_holder p{
+    margin-bottom:0px;
+    color: #969590;
+}
+.delay_temp_button{
+	cursor:pointer;
+	width: 30px;
+    height: 30px;
+    border: 2px solid orange;
+    margin: 20% auto;
+    text-align: center;
+    color:#222;
+}
+.delay_temp_button.active{
+	border: 2px solid #fff;
+	background:orange;
+	color:#fff;
+}
+.reverb_holder{
+	width: 100%;
+    height: 60px;
+    display: table;
+    vertical-align: middle;
+    border-bottom: 1px solid #fff;
+    text-align:center;
+    padding-top: 10px;
+    position: relative;
+}
+.reverb_holder p{
+    margin-bottom:0px;
+    color: #969590;
+}
+.reverb_temp_button{
+	cursor:pointer;
+	width: 30px;
+    height: 30px;
+    border: 2px solid orange;
+    margin: 20% auto;
+    text-align: center;
+    color:#222;
+}
+.reverb_temp_button.active{
+	border: 2px solid #fff;
+	background:orange;
+	color:#fff;
+}
+input[type=range][orient=vertical]
+{
+    writing-mode: bt-lr; /* IE */
+    -webkit-appearance: slider-vertical; /* WebKit */
+    width: 8px;
+    height: 175px;
+    padding: 0 5px;
+}
+.volume_holder{
+	text-align: center;
+    padding: 10px;
+}
+wave{
+    overflow: hidden !important;
+    border-bottom:1px solid #fff;
+}
+.waveform{
+    overflow: hidden;
+}
+.modal-outer{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 9999999999999999;
+}
+.modal-outer-load{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 9999999999999999;
+    display:none;
+}
+.modal-outer-project{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 9999999999999999;
+    display:none;
+}
+.modal-outer-save{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 9999999999999999;
+    display:none;
+}
+.modal-inner{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.panel {
+    padding:20px;
+    width: 400px;
+    background: #fff;
+}
+.map_midi.active{
+    color:green !important;
+}
+.jumbotron {
+    padding: 4.5rem 2rem 1rem 2rem;
+    margin-bottom: 0px;
+}
+.panel-body{
+    position:relative;
+}
+.close_btn{
+    display:none;
+    width: 100%;
+}
+.close-modal{
+    position:absolute;
+    top:0px;
+    right:10px;
+    display:none;
+}
+.feedback p{
+    margin-top: 10px;
+}
+
+.feedback2 p{
+    margin-top: 10px;
+}
+.feedback div{
+    position: absolute;
+    display: inline;
+    width: 40px;
+    height: 40px;
+    top: -8px;
+    right: 30px;
+}
+.feedback2 div{
+    position: absolute;
+    display: inline;
+    width: 40px;
+    height: 40px;
+    top: -8px;
+    right: 30px;
+}
+.control-panel{
+    border-top:1px solid #fff;
+    border-left:1px solid #fff;
+    padding-left:0px;
+    padding-right:0px;
+    background: #efefef;
+    border-right: 1px solid #fff;
+}
+.control-panel-reverb{
+    border-top:1px solid #fff;
+    border-left:1px solid #fff;
+    padding-left:0px;
+    padding-right:0px;
+    background: #efefef;
+    border-right: 1px solid #fff;
+}
+.control-panel2{
+    border-top:1px solid #fff;
+    border-right:1px solid #fff;
+    padding-left:0px;
+    padding-right:0px;
+    background: #efefef;
+}
+.control-panelSiren{
+    border-top:1px solid #fff;
+    border-right:1px solid #fff;
+    padding-left:0px;
+    padding-right:0px;
+    background: #efefef; 
+}
+.delay_controls{
+    padding: 10px 25px 0px 25px;
+}
+.delay_controls h5{
+    color: #969590;
+}
+.delay_controls p{
+    color: #969590;
+}
+.delay_controls p:first-of-type{
+    margin-top:0px;
+}
+.delay_controls2{
+    padding: 10px 25px 0px 25px;
+}
+.delay_controls2 h5{
+    color: #969590;
+}
+.delay_controls2 p{
+    color: #969590;
+}
+.delay_controls2 p:first-of-type{
+    margin-top:0px;
+}
+.inner-controls-row{
+    width: 104%;
+}
+.alert-mappings-loaded{
+    display:none;
+}
+.alert-project-loaded{
+    display:none;
+}
+.alert-mapping-saved{
+    display: none;
+}
+.alert-mappings-saved{
+    display: none;
+}
+.midi_cc{
+    height: 25px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border: 1px solid #222;
+    background: #fff;
+    color: #222;
+    padding-left: 2px;
+    padding-right: 2px;
+    min-width: 14px;
+    display:none;
+}
+.midi_cc.active{
+    display:block;
+}
+.play_siren{
+    display: block !important;
+    position: relative !important;
+    width: auto !important;
+    height: auto !important;
+    right: 0px !important;
+    left: 0px !important;
+    margin-top: 20px;
+    margin-right: 24px;
+}
+.lfo{
+    display:none !important;
+}
+.siren{
+    padding-left:0px;
+    padding-right:0px;
+}
+.siren-left p {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    position: relative;
+}
+.siren-left p:first-of-type {
+    margin-top: 0px;
+}
+.siren-left p:last-of-type {
+    margin-bottom: 20px;
+}
+.siren p{
+    margin-top: 10px;
+    margin-bottom:0px;
+    position:relative;
+}
+.siren p:first-of-type{
+    margin-top:0px;
+}
+.siren-left div{
+    position: absolute;
+    display: inline;
+    width: 40px;
+    height: 40px;
+    top: -10px;
+    right: 30px;
+}
+.siren div{
+    position: absolute;
+    display: inline;
+    width: 40px;
+    height: 40px;
+    top: 0px;
+    left: 66px;
+}
+.siren_input_holder{
+    height: 30px;
+    margin-top:0px !important;
+}
+.siren_input_holder div:first-of-type{
+    right:inherit !important;
+    left:4px;
+}
+.siren_input_holder div:last-of-type{
+    right:35px;
+    left:inherit !important;
+}
+input[type="radio"]{
+    margin-right: 5px !important;
+}
+.radio-label{
+    font-size: 12px;
+}
+.siren_controls{
+    padding: 10px 5px 0px 5px;
+}
+.siren_controls h5 {
+    color: #969590;
+}
+.siren_controls p, .siren_controls label{
+    color: #969590;
+}
+.btn-warning{
+    background-color:rgb(255, 165, 0) !important;
+    color:#fff !important;
+}
+.interim-message{
+    display:none;
+}
+.save_midi_li{
+    display:none;
+}
+.save_midi{
+    color:red !important;
+}
+.load_mappings_li{
+    display: none;
+}
+.map_midi_li{
+    display:none;
+}
+.close-project{
+    display:none;
+}
+.dark_mode {
+    background: #222;
+}
+.jumbotron.dark_mode{
+    background: #222;
+    color: #969590;
+}
+.dark_mode_li{
+    display:none;
+}
+body.dark_mode{
+    background:#333;
+    color:#fff;
+}
+.modal-inner.dark_mode{
+    color:#222;
+}
+.sample.dark_mode{
+    color:#222;
+}
+.greenbg{
+    background:rgba(152, 210, 152, 0.38);
+}

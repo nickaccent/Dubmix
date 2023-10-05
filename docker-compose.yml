@@ -1,0 +1,12 @@
+version: '2'
+services:
+  web:
+    build: ./docker
+    ports:
+      - 80:80
+    env_file:
+      - docker/.env
+    stdin_open: true
+    volumes:
+      - ./src:/var/www/html
+    tty: true
