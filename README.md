@@ -11,9 +11,13 @@ Access the site on <a href="http://localhost">http://localhost</a>
 
 Add file to the src/assets/preamp_sounds folder then change the loaded file name by modifying the line:
 
+```javascript
 sounds.push('http://localhost/assets/preamp_sounds/peaceloveandunity.mp3');
+```
 to
+```javascript
 sounds.push('http://localhost/assets/preamp_sounds/YOURFILENAMEHERE.mp3');
+```
 in the /src/js/eq.js or /src/js/scripts_preamp.js file depending on your use case.
 
 ## Adding your own music files for dubmixer
@@ -25,7 +29,10 @@ These are filename.json, filename_names.json and filename_info.json
 ## filename_info.json
 
 This is where the name and bpm of your track goes, use the following syntax:
+```javascript
 { "title": "Track Title Goes Here", "bpm": "136" }
+```
+
 
 ## filename_names.json
 
@@ -33,13 +40,17 @@ This is where the names of your channels need to go, you can just use empty doub
 i.e: ""
 
 Use the following syntax:
+```javascript
 ["Kick", "Snare", "Perc", "Hats", "Keys", "Bubble", "Organ", "Horns", "Guitar", "Bass"]
+```
+
 
 ## filename.json
 
 This is where you specify each of the individual stem locations and the name (which will be the same as the filename_names.json entry at the matching position)
 
 Use the following syntax:
+```javascript
 [
 { "url": "http://localhost/assets/healing/kick.mp3", "name": "Kick", "indexval": "0" },
 { "url": "http://localhost/assets/healing/snare.mp3", "name": "Snare", "indexval": "1" },
@@ -56,6 +67,8 @@ Use the following syntax:
 { "url": "http://localhost/assets/healing/guitar.mp3", "name": "Guitar", "indexval": "8" },
 { "url": "http://localhost/assets/healing/bass.mp3", "name": "Bass", "indexval": "9" }
 ]
+```
+
 
 Feel free to tidy up the code, it hasn't been touched or updated in years and to be honest these days it propably doesn't even need the php parts anymore, you could for instance have a file uploader above each channel to load stems in on the fly.
 
