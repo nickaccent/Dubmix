@@ -14,10 +14,13 @@ Add file to the src/assets/preamp_sounds folder then change the loaded file name
 ```javascript
 sounds.push('http://localhost/assets/preamp_sounds/peaceloveandunity.mp3');
 ```
+
 to
+
 ```javascript
 sounds.push('http://localhost/assets/preamp_sounds/YOURFILENAMEHERE.mp3');
 ```
+
 in the /src/js/eq.js or /src/js/scripts_preamp.js file depending on your use case.
 
 ## Adding your own music files for dubmixer
@@ -29,6 +32,7 @@ These are filename.json, filename_names.json and filename_info.json
 ## filename_info.json
 
 This is where the name and bpm of your track goes, use the following syntax:
+
 ```javascript
 { "title": "Track Title Goes Here", "bpm": "136" }
 ```
@@ -40,6 +44,7 @@ This is where the names of your channels need to go, you can just use empty doub
 i.e: ""
 
 Use the following syntax:
+
 ```javascript
 ["Kick", "Snare", "Perc", "Hats", "Keys", "Bubble", "Organ", "Horns", "Guitar", "Bass"]
 ```
@@ -50,6 +55,7 @@ Use the following syntax:
 This is where you specify each of the individual stem locations and the name (which will be the same as the filename_names.json entry at the matching position)
 
 Use the following syntax:
+
 ```javascript
 [
 { "url": "http://localhost/assets/healing/kick.mp3", "name": "Kick", "indexval": "0" },
